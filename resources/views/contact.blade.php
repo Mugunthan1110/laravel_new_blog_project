@@ -11,7 +11,7 @@
                 </div>
                 <div style="color:white;">
                     <p>E-mail :📧jaffnamugunthan@gmail.com</p>
-                    <p>TP No : 📱 0776247255 (Mon to Fri 9am-6pm)</p>
+                    <p>TP No : 📱 0094776247255</p>
                 </div>
             </div>
         </header>

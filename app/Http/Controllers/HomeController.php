@@ -30,7 +30,7 @@ class HomeController extends Controller
         return view ('index', compact('posts', 'categories'));
         
         // $posts = Post::all();        //select * from creat_posts_table
-        // $posts = Post::orderBy('id', 'desc')->get(); //select * from creat_posts_table  -- latest posts will show first
+        // $posts = Post::orderBy('id', 'desc')->get(); //select * from creat_posts_table, latest posts will show first
         // $posts = Post::latest()->get(); //select * from creat_posts_table  -- latest posts will show first
         // $posts = Post::where('category_id', request('category_id'))->latest()->get();
          
