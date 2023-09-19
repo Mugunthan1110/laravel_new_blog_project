@@ -6,6 +6,8 @@ use Illuminate\Http\Request;
 use App\Models\Post;
 use App\Models\Category;
 use Illuminate\Support\facades\Auth;
+use Illuminate\Support\Facades\File;
+
 
 
 
@@ -30,7 +32,12 @@ class PostController extends Controller
 
             ],
             );
-   
+            
+            $directoryPath = storage_path('app/public/images'); 
+            if (!File::exists($directoryPath)) {
+                    File::makeDirectory($directoryPath, 0755, true);
+                }
+
         // upload image file
        $imagePath = 'storage/'. $request->file('image')->store('images', 'public'); 
        
